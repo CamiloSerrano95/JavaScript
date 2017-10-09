@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1>Adding Nodes to the DOM</h1>
+
+    <ol id="list">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Asperiores ad, quam unde. Fuga</li>
+    </ol>
+
+    <script>
+        var element = document.createElement("li"),
+            content = document.createTextNode("New text");
+        element.appendChild(content);
+
+        var father = document.getElementsByTagName("li")[0].parentNode,
+            PrimerElement = document.getElementsByTagName("li")[0];
+        father.appendChild(element);
+
+        father.insertBefore(element, PrimerElement);
+    </script>
+</body>
+</html>

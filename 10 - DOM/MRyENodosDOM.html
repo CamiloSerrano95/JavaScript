@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modificando, Remplazando y Eliminando Nodos del DOM</title>
+</head>
+<body>
+    <h1>Modificando, Remplazando y Eliminando Nodos del DOM</h1>
+
+    <ol id="list">
+        <li id="primary">Lorem ipsum dolor sit amet.</li>
+        <li>Asperiores ad, quam unde. Fuga</li>
+    </ol>
+
+    <script>
+        var element = document.createElement("li"),
+            content = document.createTextNode("New text");
+        element.appendChild(content);
+
+        //var father = document.getElementsByTagName("li")[0].parentNode;
+        //reference = document.getElementsByTagName("li")[0];
+        //father.replaceChild(element, reference);
+        
+        //var PrimaryElement = document.getElementById("primary");
+        //PrimaryElement.innerHTML = "New text <i>Hello!!</i>";
+        //PrimaryElement.textContent = "New text";
+
+        var father = document.getElementsByTagName("li")[0].parentNode;
+        reference = document.getElementsByTagName("li")[0];
+        father.removeChild(reference);
+    </script>
+</body>
+</html>

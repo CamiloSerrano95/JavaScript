@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modifying styles</title>
+    <style>
+        .thumb{
+            width: 200px;
+            transition: 500ms all ease;
+        }
+
+        .grand{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modifying styles</h1>
+
+    <form action="">
+        <input type="button" value="Cambiar tamaño" onclick="zoom()">
+    </form>
+    <br>
+    <img id="thumb" class="thumb" src="https://pbs.twimg.com/profile_images/757224075823579136/sL1xHMSX.jpg" width="400" alt="">
+
+    <script>
+        var zoom = function (){
+            var thumb = document.getElementById("thumb");
+            //thumb.setAttribute("class", "thumb grand");
+            //thumb.className = "thumb grand";
+            if (thumb.className == "thumb") {
+                thumb.className = "thumb grand";
+            } else {
+                thumb.className = "thumb";
+            }
+            
+        }
+    </script>
+</body>
+</html>

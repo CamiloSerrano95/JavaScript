@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Methods and properties</title>
+</head>
+<body>
+    <h1>Methods and properties for text strings</h1>
+    <script>
+
+        //The position of the typed letter is displayed
+        var name = "Camilo";
+        var tamname = name.length;
+        var tamname = name.indexOf("m");
+
+        document.write("The name has "+ tamname +" characters");
+        document.write("<br>");
+        document.write(tamname);
+
+        document.write("<br>");
+
+//******************************************************************************//
+        //Begins counting after the first repeated letter
+        var namefull = "Camilo Serrano";
+        var tamname = namefull.indexOf("o") + 1;
+        var letter = namefull.indexOf("o", tamname);
+        document.write(letter);
+
+        document.write("<br>");
+
+//******************************************************************************//
+        //Replace text
+        var namefull = "Camilo Serrano";
+        var tamname = namefull.replace(namefull, "Antonio Serrano");
+        document.write(tamname);
+
+        document.write("<br>");
+        
+//******************************************************************************//
+        //Place the text in uppercase
+        var namefull = "Camilo Serrano";
+        var tamname = namefull.toUpperCase(namefull);
+        document.write(tamname);
+
+        document.write("<br>");
+        
+//******************************************************************************//
+        //Lower text
+        var namefull = "Camilo Serrano";
+        var tamname = namefull.toLowerCase(namefull);
+        document.write(tamname);
+
+    </script>
+</body>
+</html>

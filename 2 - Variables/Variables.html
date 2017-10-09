@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variables in JavaScript</title>
+</head>
+<body>
+    
+    <h1>This is variables</h1>
+
+    <!--Muestra el nombre declarado en la variable name-->
+    <script>
+        var name = "Camilo Serrano";
+        alert(name);
+    </script>
+
+    <!--Muestra consola pide tu nombre y lo muestra en otra consola-->
+    <script>
+        var name;
+        name = prompt("Enter your first and last name");
+        alert(name);
+    </script>
+
+    <!--Imprime tu nombre en el navegador-->
+    <script>
+        var name; 
+        name = prompt("Enter your full name");
+        document.write(name);
+        document.write("<br />")
+    </script>
+    
+    <!--Imprime tu nombre en la consola del navegador--> 
+    <script>
+        var name; 
+        name = prompt("Enter your full name");
+        console.log(name);
+    </script>
+
+    <script>
+        var name, lastname, age, email;
+        name = prompt("Enter your name");
+        lastname = prompt("Enter your last name");
+        age = prompt("Enter your age");
+        email = prompt("Enter your Email");
+
+        document.write("<br /> Your personal information is")
+        document.write("<br /> Your name is: ", name);
+        document.write("<br /> Your last name is: ", lastname);
+        document.write("<br /> Your age is: ", age + " years old") ;
+        document.write("<br /> Your Email is: ", email);
+    </script>
+</body>
+</html>

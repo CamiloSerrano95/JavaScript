@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Functions in JavaScritp</title>
+</head>
+<body>
+    <script>
+        // Shows the message of the function
+        function Greet(){
+
+            document.write("Hello! Good morning");
+        }
+        Greet();
+
+        document.write("<br>");
+
+// *****************************************************************************//
+        //Shows the message with the name that is passed to the function
+        function Greets (name){
+
+            document.write("Hello! Good morning " + name);
+        }
+
+        Greets("Camilo");
+
+        document.write("<br>");
+
+// *****************************************************************************//
+        //Request a name and display the message plus the name you entered
+        var name = prompt ("Enter your name");
+
+        function GreetPerson (name){
+
+            document.write("Hello! Good morning " + name);
+        }
+
+        GreetPerson(name);
+        document.write("<br>");
+
+// *****************************************************************************//
+    //Take two numbers and sum them
+    function summary (number1, number2){
+
+        var number1 = number1;
+        var number2 = number2;
+
+        return number1 + number2;
+    }
+
+    document.write(summary(10,30));
+    document.write("<br>");
+
+// *****************************************************************************//
+    //Turns the function into a variable and Take two numbers and sum them
+    var summary = function (number1, number2){
+
+        var number1 = number1;
+        var number2 = number2;
+
+        return number1 + number2;
+    }
+
+    document.write(summary(30,30));
+    document.write("<br>");
+
+// *****************************************************************************//
+    //Take two numbers and show which is the largest
+    function biggerNumber(numberOne, numberTwo){
+
+        if (numberOne > numberTwo) {
+            return numberOne;
+        } else {
+            return numberTwo;
+        }
+    }
+    biggerNumber(10,20);
+
+// *****************************************************************************//
+    //Ask for two numbers and calculate which is the lowest
+    var Number1 = prompt ("Enter your First number");
+    var Number2 = prompt ("Enter your Second number");
+
+    function smallerNumber(number1, number2){
+
+        if (Number1 < Number2){
+
+            return Number1;
+        }else{
+            return Number2;
+        }
+    }
+
+    document.write("The minor number is: "+ smallerNumber());
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scope of JavaScript</title>
+</head>
+<body>
+    <h1>Scope of JavaScript</h1>
+
+    <script>
+        // variable global
+
+        var varGlobal = "This is a global variable";
+
+        var thisfunction = function (){
+
+            var varlocate = "This is a locate variable";
+            //alert(varlocate);
+            //alert(varGlobal);
+            //varGlobal = "This is a global variable, modified";
+            //alert(varGlobal);
+        }
+        thisfunction();
+    </script>
+
+    <script>
+        var myfunction = function (){
+
+            var varilocate = "This is a locate variable";
+
+            var functionLocate = function (){
+
+                var varilocate = "This is a local variable, within a local function";
+                alert(varilocate);
+            }
+            functionLocate();
+        }
+        myfunction();
+    </script>
+</body>
+</html>

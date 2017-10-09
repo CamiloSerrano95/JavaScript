@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Average notes</title>
+</head>
+<body>
+    <script>
+        alert("Hello! Enter your three notes and we will give you your average")
+
+        var noteOne = prompt("Enter your first note");
+        var noteTwo = prompt("Enter your second note");
+        var noteThree = prompt("Enter your third note");
+
+        var average = (noteOne + noteTwo + noteThree)/3;
+
+        if (average >= 3) {
+            document.write("Congratulations! Have you passed the course");
+        } else {
+            document.write("We are sorry! Did not pass the course");
+        }
+    </script>
+</body>
+</html>
